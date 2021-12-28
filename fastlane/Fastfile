@@ -1,0 +1,63 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+
+def updateProjectBuildNumber
+currentTime = Time.new.strftime("%Y%m%d")
+build = get_build_number()
+if build.include?"#{currentTime}."
+# => 为当天版本 计算迭代版本号
+lastStr = build[build.length-2..build.length-1]
+lastNum = lastStr.to_i
+lastNum = lastNum + 1
+lastStr = lastNum.to_s
+if lastNum < 10
+lastStr = lastStr.insert(0,"0")
+end
+build = "#{currentTime}.#{lastStr}"
+else
+# => 非当天版本 build 号重置
+build = "#{currentTime}.01"
+end
+puts("*************| 更新build #{build} |*************")
+# => 更改项目 build 号
+increment_build_number(
+build_number: "#{build}"
+)
+end
+
+desc "打包到pgy"
+lane :test do |options|
+
+system("bundle exec pod install --no-repo-update")
+
+
+updateProjectBuildNumber
+gym(
+  clean:true, #打包前clean项目
+# 指定打包所使用的输出方式，目前支持app-store, package, ad-hoc, enterprise, development
+  export_method: "development", #导出方式
+  scheme:"Example", #scheme
+  configuration: "Debug",#环境
+  output_directory:"./app",
+  output_name:get_build_number()#输出ipa的文件名为当前的build号
+  )
+#蒲公英的配置 替换为自己的api_key和user_key
+pgyer(api_key: "1c97f36f9117d3ec82056a843b5667ca", user_key: "4c97379e12d032fc2a96645abbd0db1d",update_description: options[:desc])
+end
+end
