@@ -179,7 +179,7 @@
 		1904AA1821D1D61800316F97 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		190921D322B0FAB40045D18F /* RearrangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RearrangeViewController.h; sourceTree = "<group>"; };
 		190921D422B0FAB40045D18F /* RearrangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RearrangeViewController.m; sourceTree = "<group>"; };
-		190A54DA206397370050B327 /* JXCategoryView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXCategoryView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		190A54DA206397370050B327 /* JXCategoryView1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXCategoryView1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		190A54DD206397370050B327 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		190A54DE206397370050B327 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		190A54E0206397370050B327 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -524,7 +524,7 @@
 		190A54DB206397370050B327 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				190A54DA206397370050B327 /* JXCategoryView.app */,
+				190A54DA206397370050B327 /* JXCategoryView1.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1191,9 +1191,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		190A54D9206397370050B327 /* JXCategoryView */ = {
+		190A54D9206397370050B327 /* JXCategoryView1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 190A54F0206397370050B327 /* Build configuration list for PBXNativeTarget "JXCategoryView" */;
+			buildConfigurationList = 190A54F0206397370050B327 /* Build configuration list for PBXNativeTarget "JXCategoryView1" */;
 			buildPhases = (
 				190A54D6206397370050B327 /* Sources */,
 				190A54D7206397370050B327 /* Frameworks */,
@@ -1203,9 +1203,9 @@
 			);
 			dependencies = (
 			);
-			name = JXCategoryView;
+			name = JXCategoryView1;
 			productName = JXCategoryView;
-			productReference = 190A54DA206397370050B327 /* JXCategoryView.app */;
+			productReference = 190A54DA206397370050B327 /* JXCategoryView1.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1224,7 +1224,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 190A54D5206397370050B327 /* Build configuration list for PBXProject "JXCategoryView" */;
+			buildConfigurationList = 190A54D5206397370050B327 /* Build configuration list for PBXProject "JXCategoryView1" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -1237,7 +1237,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				190A54D9206397370050B327 /* JXCategoryView */,
+				190A54D9206397370050B327 /* JXCategoryView1 */,
 			);
 		};
 /* End PBXProject section */
@@ -1558,13 +1558,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6Y4565ARQY;
+				DEVELOPMENT_TEAM = LG9Z58CS6N;
 				INFOPLIST_FILE = JXCategoryView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jiaxin.JXCategoryView.31;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xueqiu.test1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -1577,13 +1579,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6Y4565ARQY;
+				DEVELOPMENT_TEAM = LG9Z58CS6N;
 				INFOPLIST_FILE = JXCategoryView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jiaxin.JXCategoryView.31;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xueqiu.test1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1593,7 +1597,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		190A54D5206397370050B327 /* Build configuration list for PBXProject "JXCategoryView" */ = {
+		190A54D5206397370050B327 /* Build configuration list for PBXProject "JXCategoryView1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				190A54EE206397370050B327 /* Debug */,
@@ -1602,7 +1606,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		190A54F0206397370050B327 /* Build configuration list for PBXNativeTarget "JXCategoryView" */ = {
+		190A54F0206397370050B327 /* Build configuration list for PBXNativeTarget "JXCategoryView1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				190A54F1206397370050B327 /* Debug */,
